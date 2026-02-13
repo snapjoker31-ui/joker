@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joker</title>
+    <meta name="description"
+        content="Portfolio of Joker, a Desktop Application Developer specialized in WPF and Full-Stack Web Developer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-outline" id="cursor-outline"></div>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">JOKER<span class="accent">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#expertise" data-i18n="nav_expertise">Expertise</a></li>
+                <li class="nav-dropdown">
+                    <a href="projects.html" data-i18n="nav_projects">Projects <i class="fa-solid fa-chevron-down"
+                            style="font-size: 0.8rem; margin-left: 4px;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="projects.html#jokereye">JokerEye</a></li>
+                        <li><a href="projects.html#jokercashier">JokerCashier</a></li>
+                    </ul>
+                </li>
+                <li><a href="#differentiators" data-i18n="nav_why_me">Why Me</a></li>
+                <li class="controls">
+                    <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <button id="lang-toggle" class="lang-btn" aria-label="Switch Language">
+                        AR
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <span class="eyebrow" data-i18n="hero_eyebrow">Hello, I'm</span>
+                    <h1 class="glitch-text" data-text="Joker">Joker</h1>
+                    <h2 class="subtitle">
+                        <span data-i18n="hero_role1">Desktop App Developer</span>
+                        <span class="accent">&</span>
+                        <span data-i18n="hero_role2">Full-Stack Web Dev</span>
+                    </h2>
+                    <p class="hero-desc" data-i18n="hero_desc">
+                        Specialized in WPF, .NET, and modern Web Technologies.
+                        Transforming ideas into reliable, high-quality, and commercially viable software solutions.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="projects.html" class="btn-primary" data-i18n="btn_view_work">View My Work</a>
+                    </div>
+                </div>
+
+                <div class="hero-avatar-container">
+                    <div class="avatar-wrapper">
+                        <img src="assets/images/avatar.png" alt="Joker Developer Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-elements">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+    </header>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sect_about">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-i18n="about_p1">
+                        I am a <strong>Desktop Application Developer</strong> specialized in WPF, and a <strong>Web
+                            Designer / Full-Stack Developer</strong>, with 3–5 years of experience in freelancing and
+                        personal project development.
+                    </p>
+                    <p data-i18n="about_p2">
+                        I have strong experience in building desktop applications using <strong>C#, .NET Framework, and
+                            .NET Core / .NET 6+</strong>, following the MVVM architecture to create clean, scalable, and
+                        maintainable applications.
+                    </p>
+                    <p data-i18n="about_p3">
+                        Performance and user experience are key priorities for me. I actively use Multi-Threading and
+                        Async Programming to ensure smooth and responsive applications. I also build robust management
+                        systems using SQLite and SQL Server with Entity Framework.
+                    </p>
+                </div>
+                <div class="about-highlight">
+                    <div class="glass-card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3 data-i18n="security_title">Security Expert</h3>
+                        <p data-i18n="security_desc">I develop software licensing and protection systems, enabling the
+                            creation of commercial
+                            desktop applications with strong security against unauthorized use.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="section expertise-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sect_expertise">Technical Expertise</h2>
+
+            <div class="expertise-grid">
+                <!-- Desktop Dev -->
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fa-brands fa-windows"></i></div>
+                    <h3 data-i18n="exp_desktop">Desktop Development</h3>
+                    <ul class="skill-list">
+                        <li>C# & .NET Core / .NET 6+</li>
+                        <li>WPF & XAML</li>
+                        <li>MVVM Architecture</li>
+                        <li>Entity Framework (SQL/SQLite)</li>
+                        <li>Multi-Threading & Async</li>
+                        <li data-i18n="skill_protection">Software Protection & Licensing</li>
+                    </ul>
+                </div>
+
+                <!-- Web Dev -->
+                <div class="expertise-card">
+                    <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                    <h3 data-i18n="exp_web">Web Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>Bootstrap & Tailwind</li>
+                        <li>PHP & Laravel</li>
+                        <li data-i18n="skill_api">API Integration</li>
+                        <li data-i18n="skill_responsive">Responsive Design</li>
+                        <li data-i18n="skill_uiux">Modern UI/UX</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="differentiators" class="section diff-section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="sect_whyme">What Sets Me Apart</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h4 data-i18n="feat_ui">Professional UI Design</h4>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-brain"></i>
+                    <h4 data-i18n="feat_logic">Strong Programming Logic</h4>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lock"></i>
+                    <h4 data-i18n="feat_protect">Advanced Protection Systems</h4>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h4 data-i18n="feat_creative">Creative Solutions</h4>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h4 data-i18n="feat_perf">High Performance</h4>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h4 data-i18n="feat_detail">Attention to Detail</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="footer-title" data-i18n="footer_title">Let's Build Something Amazing</h2>
+            <p class="footer-desc" data-i18n="footer_desc">Ready to transform your ideas into reliable software
+                solutions?</p>
+
+            <div class="social-links">
+                <a href="https://github.com/snapjoker31-ui"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/ali.joker.85/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Joker. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
